@@ -1,0 +1,106 @@
+<!-- https://source.unsplash.com/random/?city,night -->
+<!-- https://awik.io/generate-random-images-unsplash-without-using-api/ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/5efd9c5179.js" crossorigin="anonymous"></script>
+
+    <!-- this is swiper cdn link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>slider</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <i id="menu-icon" class="fa-solid fa-bars"></i>
+            <p>Meet app</p>
+            <i id="bell-icon" class="fa-solid fa-bell"></i>
+        </div>
+
+        <div class="main-text">
+            <h2>OUR TEAM</h2>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta at eaque excepturi quasi, totam
+                necessitatibus quae veniam animi distinctio, quia doloremque sunt sed assumenda blanditiis nesciunt
+                laudantium officiis. Ratione, voluptatibus?</small>
+        </div>
+
+        <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src=" https://source.unsplash.com/random/?boy" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src=" https://source.unsplash.com/random/?boy" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src=" https://source.unsplash.com/random/?boy" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src=" https://source.unsplash.com/random/?boy" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src=" https://source.unsplash.com/random/?boy" alt="">
+          </div>
+          
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+  
+
+      
+
+        <div class="footer-menu">
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-backward"></i>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        centeredSlider: true,
+        grabCursor: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+</body>
+
+</html>
+
+
+
+<!-- <img src=" https://source.unsplash.com/random/300x300/?city,night" alt="" >
+            <img src=" https://source.unsplash.com/random/300x300/?man,person" alt="">
+            <img src=" https://source.unsplash.com/random/300x300/?girl" alt="">
+            <img src=" https://source.unsplash.com/random/300x300/?boy" alt=""> -->

@@ -1,0 +1,23 @@
+.text-center{
+    text-align: center;
+  }
+  
+  .flex{
+    display:flex;
+  }
+  
+  .flex-col{
+    flex-direction:column;
+  }
+  .bg-red{
+  /*   background:red; */
+  }
+  
+  
+  
+  
+  .item-center{
+    align-items:center;
+  }
+  
+  

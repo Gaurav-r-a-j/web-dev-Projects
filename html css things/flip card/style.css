@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rubik:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    /* place-items is used to center items in a grid ; */
+    place-items: center;
+    line-height: 1.6;
+    background: linear-gradient(45deg,#eefcfe, #fdf6ff);
+}
+
+
+
+
+
+.card{
+    width: 360px;
+    height: 460px;
+
+    /* for flip  */
+    position: relative;
+    perspective: 1200px;
+}
+
+.card:hover .card-front{
+    transform: rotateY(-100deg);
+
+}
+
+.card:hover .card-back{
+    transform: rotateY(0deg);
+}
+
+.card-front,.card-back{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 16px 0 #858194;
+
+    position: absolute;
+    backface-visibility: hidden;
+
+    transition: transform 1s cubic-bezier(0.3,0.6,0.3,1.2);
+}
+
+.card-front{
+    background: url("gauravraj4.jpeg") center center / cover no-repeat;
+}
+
+.card-back{
+    background: #fefffe;
+    color: #2d3047;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+
+    transform: rotateY(180deg);
+
+}
+
+
+
+.profile-picture {
+    
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(135deg, #f9e900,#ed33b9);
+
+}
+
+
+.bio .name{
+    font-size: 1.8rem;
+}
+
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons i{
+    background: linear-gradient(135deg, #f9e900,#ed33b9);
+    color: #fefffe;
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-top: 20%;
+}
+
+.icons a{
+    text-decoration: none;
+}

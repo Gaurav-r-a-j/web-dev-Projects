@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --wduration:.4s;
+    --jumpduration:.5s;
+    --cduration:2s;
+    --tduration:3s;
+    --cloudduration:15s;
+
+}
+
+
+
+body{
+    overflow: hidden;
+    background: #2482eb;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.hidden{
+    overflow: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.cloud img{
+    width: 100vw;
+    height: 78vh;
+
+}
+
+.more-clouds img{
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    background-size: cover;
+    animation: movecloud var(--cloudduration) linear infinite;
+
+}
+
+.mountain img{
+    position: absolute;
+    width: 114vw;
+    height: 100vh;
+    left: -15vw;
+    top: 93px;
+
+}
+
+.car{
+    display: flex;
+    justify-content: end;
+}
+
+.car img{
+   
+    width: 30vw;
+    height: 30vh;
+    position: relative;
+    bottom: 63px;
+    right: 0;
+    z-index: 10;
+    animation: jumpcar .3s linear infinite;
+}
+
+
+.wheel1 img{
+    position: absolute;
+    width: 4vw;
+    height: 11vh;
+    bottom: 27px;
+    right: 21vw;
+    animation: rotatewheels var(--wduration) linear infinite;
+    /* animation: jumpcar .3s linear infinite; */
+}
+.wheel2 img{  
+    position: absolute;
+    width: 4vw;
+    height: 11vh;
+    right: 5.4vw;
+    bottom: 27px;
+    animation: rotatewheels var(--wduration) linear infinite;
+
+    /* animation: jumpcar .3s linear infinite; */
+
+}
+.track{
+    width: 100%;
+}
+
+.track img{
+    position: absolute;
+    bottom: -15vw;
+    z-index: -1;
+    overflow: hidden;
+    width: 208vw;
+    height: 18vw;
+    z-index: 1;
+    transition: 3s;
+    animation: trackSlide var(--tduration) linear infinite;
+
+}
+
+
+
+
+
+@keyframes rotatewheels {
+    100%{
+        transform: rotate(-360deg);
+    }
+    
+}
+
+
+@keyframes trackSlide {
+    0%{
+        transform: translateX(-50vw);
+    }
+    100%{
+        /* transform: translateX(550px); */
+        transform: translateX(-102px);
+    }
+    
+}
+
+
+@keyframes jumpcar {
+    0%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+    
+}
+
+
+
+@keyframes movecloud {
+    0%{
+        transform: translateX(0vw);
+    }
+    100%{
+        transform: translateX(550px);
+    }
+    
+}

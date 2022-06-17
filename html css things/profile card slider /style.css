@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image:linear-gradient(to right, #bb77ff, #ff82e6);
+}
+
+
+.card img{
+    width: 200px;
+}
+
+
+
+.outer-con{
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%,50%);
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+
+.inner-con{
+    width: 220px;
+    height: 350px;
+    /* border: 2px solid black; */
+    position: relative;
+    margin: 75px 240px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.slider{
+    display: inline-flex;
+    /* margin-left: -220px; */
+    transition: all 1s;
+
+}
+
+.slider img{
+    width: 100px;
+    /* height: 100px; */
+    border-radius: 50%;
+    margin-top: 40px;
+
+}
+
+.slider .card1,.card2,.card3{
+    width: 220px;
+    height: 350px;
+    background-color: #202a33;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.slider h1{
+    font-size: 15px;
+    text-transform: capitalize;
+    color: aliceblue;
+    margin: 5px 0;
+}
+
+.slider i{
+    display: inline-block;
+    margin: 13px 10px;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 14px;
+
+}
+
+.slider  i:nth-child(1){
+    background-image: linear-gradient(to right, #5188fd, #49c5ff);
+    padding: 12px 15px;
+    border-radius: 50%;
+}
+.slider  i:nth-child(2){
+    background-image: linear-gradient(to right, #cc00ff, #ff49b3);
+    padding: 12px 13px;
+    border-radius: 50%;
+}
+.slider  i:nth-child(3){
+    background-image: linear-gradient(to right, #8c00ff, #ff55b8);
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.icons{
+    margin-bottom: 12px;
+}
+
+.slider a{
+    padding: 7px 60px;
+    font-size: 12px;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.btns{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%,50%);
+}
+
+.btns button{
+    border: 2px solid aliceblue;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0 6px;
+}
+
+.btns button:nth-child(1){
+    background-color: aliceblue;
+}

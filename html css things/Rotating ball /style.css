@@ -1,0 +1,124 @@
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-color: #0d0d26;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ball-wrapper{
+    --wrapperWidth:180px;
+    width: var(--wrapperWidth);
+    display: flex;
+    justify-content: space-between;
+    /* background-color: hsl(0, 0%, 100%,0.3); */
+}
+
+.ball-wrapper .ball{
+    --ball-size: 20px;
+    --duration: 2s;
+    --origin: -80px;
+    /* --gap: calc(var(--wrapperWidth) - var((--ball-size) * 5)/4); */
+    /* --gap: calc(80/4); */
+    --gap: 20px;
+    /* --moveBall: calc((var(--ball-size)+var(--gap)) * -1); */
+    --moveBall: -40px;
+    height: var(--ball-size);
+    width: var(--ball-size);
+    border-radius: 50%;
+}
+
+.ball-wrapper .ball:nth-child(1){
+    background-color: #ef5252;
+    animation: moveX var(--duration) linear infinite alternate;
+}
+
+@keyframes moveX {
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        /* transform: translateX(calc(var(--wrapperWidth) - var(--ball-size))); */
+        transform: translateX(160px);
+    }
+}
+
+
+
+.ball-wrapper .ball:nth-child(2){
+    background-color: #df9d3a;
+    animation: ball2 var(--duration) linear infinite alternate;
+}
+
+.ball-wrapper .ball:nth-child(3){
+    background-color: #3dcaf5;
+    animation: ball3 var(--duration) linear infinite alternate;
+
+}
+
+.ball-wrapper .ball:nth-child(4){
+    background-color: #5ad3b1;
+    animation: ball4 var(--duration) linear infinite alternate;
+
+}
+
+.ball-wrapper .ball:nth-child(5){
+    background-color: #ffffff;
+    animation: ball5 var(--duration) linear infinite alternate;
+
+}
+
+
+
+@keyframes ball2 {
+    0%{
+        transform-origin: var(--origin);
+        transform: translateX(0) rotate(0);
+    }
+    25%,100%{
+        transform-origin: center;
+        transform: translateX(var(--moveBall)) rotate(-90deg);
+    }
+}
+
+
+@keyframes ball3 {
+    0%,25%{
+        transform-origin: var(--origin);
+        transform: translateX(0) rotate(0);
+    }
+    50%,100%{
+        transform-origin: center;
+        transform: translateX(var(--moveBall)) rotate(-90deg);
+    }
+}
+
+
+@keyframes ball4 {
+    0%,50%{
+        transform-origin: var(--origin);
+        transform: translateX(0) rotate(0);
+    }
+    75%,100%{
+        transform-origin: center;
+        transform: translateX(var(--moveBall)) rotate(-90deg);
+    }
+}
+
+
+@keyframes ball5{
+    0%,75%{
+        transform-origin: var(--origin);
+        transform: translateX(0) rotate(0);
+    }
+    100%{
+        transform-origin: center;
+        transform: translateX(var(--moveBall)) rotate(-90deg);
+    }
+}
+
+
+
+
