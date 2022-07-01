@@ -70,7 +70,7 @@ class Display {
         // this is used to automatically remove the shown message after given time 
         setTimeout(function () {
             message.innerHTML = '';
-        }, 5000);
+        }, 2000);
     
     }
 
@@ -92,7 +92,7 @@ libraryForm.addEventListener('submit', libraryFormSubmit);
 
 
 function libraryFormSubmit(e) {
-    console.log("you have submitted library from");//as by default behaviour of form the page reloaded after it submitted so lets change the default behaviour of our form
+    console.log("you have submitted library form");//as by default behaviour of form the page reloaded after it submitted so lets change the default behaviour of our form
 
     let title = document.getElementById('bookName').value;
     let author = document.getElementById('Author').value;

@@ -57,7 +57,7 @@ Display.prototype.validate = function (book) {
 
 Display.prototype.clear = function () {
     let libraryForm = document.getElementById('libraryform');
-    libraryForm.reset();
+    libraryForm.reset();//here reset is used to clear the previous form filled data
 }
 
 
@@ -76,7 +76,7 @@ Display.prototype.show = function (type, displaymessage) {
     // this is used to automatically remove the shown message after given time 
     setTimeout(function () {
         message.innerHTML = '';
-    }, 2000);
+    }, 1000);
 
 }
 
