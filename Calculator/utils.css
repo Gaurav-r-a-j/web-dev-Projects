@@ -1,23 +1,37 @@
-.text-center{
-    text-align: center;
-  }
-  
-  .flex{
-    display:flex;
-  }
-  
-  .flex-col{
-    flex-direction:column;
-  }
-  .bg-red{
-  /*   background:red; */
-  }
-  
-  
-  
-  
-  .item-center{
-    align-items:center;
-  }
-  
-  
+.text-center {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+  background-color: rgb(251, 242, 74);
+  padding: 5px 30px;
+  border-radius: 10px;
+  text-transform: capitalize;
+
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.item-center {
+  align-items: center;
+}
+
+
+.poweredBy{
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+}
+
+
+span{
+  font-size: 15px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(247, 1, 255);
+  font-style: italic;
+}

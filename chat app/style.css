@@ -33,7 +33,6 @@ body {
 /* Signup form css code  */
 .form {
     padding: 25px 30px;
-
 }
 
 .form header {
@@ -238,7 +237,7 @@ form .name-details .field:last-child {
     transition: all 0.3s ease;
 }
 
-/* this if for javascipt property applied for seach button  */
+/* this if for javascipt property applied for search button  */
 .users .search input.active {
     opacity: 1;
     pointer-events: auto;

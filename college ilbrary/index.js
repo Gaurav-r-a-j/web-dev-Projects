@@ -76,7 +76,7 @@ Display.prototype.show = function (type, displaymessage) {
     // this is used to automatically remove the shown message after given time 
     setTimeout(function () {
         message.innerHTML = '';
-    }, 5000);
+    }, 2000);
 
 }
 
@@ -127,7 +127,7 @@ function libraryFormSubmit(e) {
     if (display.validate(book)) {
         display.add(book);
         display.clear();
-        display.show('success', 'your book has been successfully addes');
+        display.show('success', 'your book has been successfully added');
     }
     else {
         //    show error to the user 
