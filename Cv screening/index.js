@@ -1,4 +1,4 @@
-console.log('Thi is my index.js and this is tutorial no.55 in which we are making CV screener');
+// console.log('Thi is my index.js and this is tutorial no.55 in which we are making CV screener');
 
 //Data is an array of objects which contains information about the candidatesß
 const data=[
@@ -71,11 +71,11 @@ function nextCV(){
     if(CurrenCandidate != undefined){
     image.innerHTML = `<img src="${CurrenCandidate.image}" alt="">`;
     profile.innerHTML = `<ul class="list-group">
-    <li class="list-group-item">${CurrenCandidate.name}</li>
-    <li class="list-group-item">${CurrenCandidate.age} years old </li>
-    <li class="list-group-item">Lives in ${CurrenCandidate.city}</li>
-    <li class="list-group-item">Primarly works on ${CurrenCandidate.language}</li>
-    <li class="list-group-item">Uses ${CurrenCandidate.framework} framwork</li>
+    <li class="list-group-item name"><b>${CurrenCandidate.name}</b></li>
+    <li class="list-group-item age">${CurrenCandidate.age} years old </li>
+    <li class="list-group-item city">Lives in ${CurrenCandidate.city}</li>
+    <li class="list-group-item language">Primarly works on ${CurrenCandidate.language}</li>
+    <li class="list-group-item framework">Uses ${CurrenCandidate.framework} framwork</li>
 
   </ul>`
     }

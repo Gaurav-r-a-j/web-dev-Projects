@@ -18,7 +18,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZ2F1cmF2LXItYS1qIiwiYSI6ImNsM3F2bWRlNDFjMDYza
  
 map.addControl(new mapboxgl.NavigationControl());
  
-// filters for classifying earthquakes into five categories based on magnitude
+// filters for classifying different area into five categories base
 const mag1 = ['<', ['get', 'mag'], 2];
 const mag2 = ['all', ['>=', ['get', 'mag'], 2], ['<', ['get', 'mag'], 3]];
 const mag3 = ['all', ['>=', ['get', 'mag'], 3], ['<', ['get', 'mag'], 4]];
