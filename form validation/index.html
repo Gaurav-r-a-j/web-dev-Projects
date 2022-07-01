@@ -12,24 +12,29 @@
 
     <title>Welcome to iTravel!</title>
     <style>
-        #success{
+        #success {
             display: none;
         }
+        .shift{
+            min-height: 80px;
+        }
+        
     </style>
 </head>
 
 <body>
     <!-- -------Success msg --------- -->
-    <div id="success" class="alert alert-success alert-dismissible fade " role="alert">
-        <strong>Success!</strong> Your Travle request is successfully submitted
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-    <div id="failure" class="alert alert-danger alert-dismissible fade " role="alert">
-        <strong>failed!</strong> Your travel request has not been submitted due to some errors
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
+    <div class="shift">
+        <div id="success" class="alert alert-success alert-dismissible fade " role="alert">
+            <strong>Success!</strong> Your Travle request is successfully submitted
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div id="failure" class="alert alert-danger alert-dismissible fade " role="alert">
+            <strong>failed!</strong> Your travel request has not been submitted due to some errors
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
 
-
+    </div>
     <div class="container">
 
         <h1>iTravel!</h1>
