@@ -1,4 +1,4 @@
-console.log('This is tutorial no.62 , making a clock');
+// console.log('This is tutorial no.62 , making a clock');
 
 function updateClock(){
     //Get the new date
@@ -8,6 +8,7 @@ function updateClock(){
     let currentHour = currentTime.getHours();
     let currentMinutes = currentTime.getMinutes();
     let currentSecond = currentTime.getSeconds();
+
 
     //pad 0 when only one digit
     currentHour = (currentHour<10?"0":'') + currentHour;
@@ -25,6 +26,7 @@ function updateClock(){
 
     //this is the time formtat to be shown on screen 
     let currentTimeStr = currentHour + ":"+ currentMinutes + ":"+ currentSecond +" "+timeofDay;
+
 
     document.getElementById('clock').innerHTML = currentTimeStr;
 
