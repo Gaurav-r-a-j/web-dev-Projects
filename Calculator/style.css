@@ -13,6 +13,8 @@ html, body {
   width: 100%;
   font-family: 'Poppins', sans-serif;
   overflow: hidden;
+  background: linear-gradient(#3f51b5, #000); 
+
 }
 
 body{

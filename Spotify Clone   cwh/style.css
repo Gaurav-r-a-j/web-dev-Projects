@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 body{
     background-color: antiquewhite;
+  background: linear-gradient(#3f51b5, rgb(163, 35, 127)); 
+
 }
 
 *{
