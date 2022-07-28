@@ -6,7 +6,7 @@
 
 :root{
     --CubeSize:200px;
-    --CubeZ: 100px;
+    --CubeZ: 150px;
     --CubeRT:15s;
     --CubeShadowT:1s;
 }
