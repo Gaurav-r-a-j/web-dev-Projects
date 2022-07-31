@@ -3,7 +3,7 @@ console.log("This is ES6 version of index.js");
 /*
 to do 
 1 = store all the data to the locaStroage
-2 = Give anotehr colum as an option to delete the book
+2 = Give anotehr column as an option to delete the book
 3 = Add a scroll bar to the view
 */
 
